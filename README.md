@@ -2,39 +2,35 @@
 
 **SUBMIT ANY ISSUES USING THE LINK ABOVE**
 
-There's a config for disabling specific elites and the Tier 2 HP/Damage Multipliers. Some crown displays might be wonky.
+There's a config for disabling specific elites. Some crown displays might be wonky.
 
 ## Tier 1
 
 ### Volatile (RoR1)
 
-- All attacks explode
-- Fires a missile in random intervals between 1 and 5 seconds (inclusive)
-- Missile damage uses fixed scaling instead of base damage
-- Fixed damage scaling values: 12 base +2.4/lvl for normal enemies and 18 base +3.6/lvl for boss class enemies
-
-### Frenzied (RoR1)
-
-- +2 base move speed
-- +50% attack speed
-- Teleport to closest enemy or in move direction
-
-### Empowering
-
-- 25m radius zone that applies a warbanner buff to itself and surrounding allies
+-
 
 ## Tier 2
 
+Position DOES matter when adding the array, so if it doesn't look quite how you like, experiment with swapping positions of the colors.
+
 ### Echo
 
-- Spawns 2 clones of itself with 10% max HP
+- Spawns 2 clones of itself with 10% max HP and full damage
 - Clones die if main body is killed
-- Clones fire hunter projectiles
-- Hunter Projectiles damage uses fixed scaling instead of base damage
-- Fixed damage scaling values: 24 base +4.8/lvl for normal enemies and 32 base +7.2/lvl for boss class enemies
-  - **I don't loop lmk if these values are too high or too low**
 
-![3 elite beetles](https://i.ibb.co/4NJqjwk/moreelites.png)
+Tier 2
+
+    Shielding: Has a bubble shield that protects itself and allies
+    Hemorrhaging: Intermittently creates a sphere near a target, predictive placement, initial explosion damage and stacks bleed the longer you're in it. (could be any debuff really or a random one)
+
+Tier 1
+
+    Temporal: Intermittently blinks short distances around itself (random node in a sphere around itself)
+    Anchor: Makes 3? nearby allies immune
+    Parasitic: On attack hit (if it misses create a trap fly that attaches if you get in the zone), attach a beetle queen fly to the target in the zone, it has to be destroyed else it keeps stacking beetle juice (fly HP would be a % of the elite's HP and have a base amount if their HP is too low)
+    Conduit: Turns immune at an HP threshold(s) and forms a destructible orb (HP based on monster HP) that follows it, destroying it removes immunity.
+    Juggernaut: Immune to stun/freeze/slow
 
 ## Changelog
 

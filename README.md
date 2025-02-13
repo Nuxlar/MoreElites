@@ -34,6 +34,10 @@ Tier 1
 
 ## Changelog
 
+**1.0.3**
+
+- Updated for SOTS
+
 **1.0.2**
 
 - Removes debug logs (whoops)
